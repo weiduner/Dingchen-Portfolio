@@ -1,0 +1,7 @@
+skill used:
+    javascript
+    react
+    css
+    sass
+lib used:
+    framer-motion

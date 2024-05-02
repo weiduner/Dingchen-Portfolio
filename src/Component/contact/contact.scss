@@ -1,0 +1,109 @@
+@import "../../app.scss";
+
+.contact{
+    height: calc(100vh - 100px);
+    max-width: 1366px;
+    width: 68vw;
+    margin: auto;
+    display: flex;
+    align-items:center;
+    gap: 8vw;
+
+    @include mobile {
+        width: 100%;
+        padding: 1vw;
+        flex-direction: column;
+      }
+
+    .textContainer{
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5vh;
+        color: lightgray;
+
+        @include mobile {
+            gap: 20px;
+            text-align: center;
+            align-items: center;
+            margin-top: 70px;
+          }
+        
+        h1{
+            font-size: 5vw;
+            line-height: 5vw;
+
+            @include mobile {
+                font-size: 7vw;
+                line-height: 6vw;
+              }
+        }
+        
+        h2{
+            font-size: 2vw;
+            line-height: 2vw;
+            @include mobile {
+                font-size: 5vw;
+                line-height: 5vw;
+              }
+        }
+        span{
+            font-size: 1.5vw;
+            font-weight: 300;
+            @include mobile {
+                font-size: 3vw;
+
+              }
+        }
+    }
+
+    .formContainer{
+        flex:1;
+        position: relative;
+        @include mobile {
+            padding: 50px;
+            width: 100%;
+        }
+
+        .phoneSvg{
+            stroke: orange;
+            position: absolute;
+            margin: auto;
+            z-index: -1;
+            stroke-width:0.0002;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 2vh;
+    
+            input,textarea{
+                padding: 2vh;
+                background-color: transparent;
+                border: 1px solid lightgray;
+                color: lightgray;
+                border-radius: 5px;
+                @include mobile {
+                    padding: 2vh;
+                  }
+            }
+
+            button{
+                padding: 2vh;
+                background-color: orange;
+                border: none;
+                color: #0c0c1d;
+                border-radius: 5px;
+                cursor: pointer;
+                font-weight: 500;
+                @include mobile {
+                    padding: 2vh;
+                  }
+            }
+
+        }
+        
+
+    }
+}
