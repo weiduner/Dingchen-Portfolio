@@ -17,10 +17,10 @@ const Navbar = () => {
                     Portfolio
                 </motion.span>
                 <div className="social">
-                    <a href="#"><img src="/email.png" alt=""/></a>
-                    <a href="#"><img src="/linkedIn.png" alt=""/></a>
-                    <a href="#"><img src="/github.png" alt=""/></a>
-                    <a href="#"><img src="/facebook.png" alt=""/></a>
+                    <a href="#Contact"><img src="/email.png" alt=""/></a>
+                    <a href="https://www.linkedin.com/in/dingchen-wei-1342a9244" target="_blank"><img src="/linkedIn.png" alt=""/></a>
+                    <a href="https://github.com/weiduner" target="_blank"><img src="/github.png" alt=""/></a>
+                    <a href="https://www.facebook.com/tony.wei.1420" target="_blank"><img src="/facebook.png" alt=""/></a>
                 </div>
             </div>
 

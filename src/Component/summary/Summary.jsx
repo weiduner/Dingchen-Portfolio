@@ -62,6 +62,7 @@ const Summary = () => {
 
 
             <div className="wrapper">
+                
                 <motion.div 
                     className="textContainer" 
                     variants = {textVariant} 
@@ -71,31 +72,41 @@ const Summary = () => {
                     
                     <motion.h1 variants = {textVariant}>Hi, I'm Dingchen</motion.h1>
                     <motion.h2 variants = {textVariant}>
-                        I'm a results-oriented Software Engineer with with proficent skills in full-stack developing. Reach out if you'd like to learn more!
+                        I'm a results-oriented Software Engineer with proficent skills in full-stack developing and automation testing. Reach out if you'd like to learn more!
                     </motion.h2>
                     <motion.div className="buttons">
                         <motion.a 
                             href={`#Project`} 
                             variants = {textVariant}
+                            whileHover={{
+                                backgroundColor: "#fff",
+                                color:"#000",
+                                }}
                         >
                         See my projects
                         </motion.a>
                         <motion.a 
                             href={`#Contact`} 
                             variants = {textVariant}
+                            whileHover={{
+                                backgroundColor: "#fff",
+                                color:"#000",
+                                }}
+                            
                         >
                         contact me
                         </motion.a>
                     </motion.div>
                     
                 </motion.div>
+                <div className="imageContainer">
+                    <img src="Hero.png" alt=""/>
+                </div>
             </div>
 
             
 
-            <div className="imageContainer">
-                <center><img src="Dingchen.png" alt=""/></center>
-            </div>
+            
 
             <motion.div 
                 className="nextPage"

@@ -7,40 +7,59 @@
     background: linear-gradient(180deg, #0c0c1d, #111132);
     position: relative;
 
-    .imageContainer{
+    
+    .wrapper{
+        width: 100%;
         height: 100%;
-        position: absolute;
-        top:0;
-        left:50vw;
-
-        z-index: 3;
-        @include mobile {
-            height: 50%;
-            width: 100%;
-            bottom: 0;
-            top:auto;
-            left:0;
-
-          }
-
-        img{
-            height:calc(100vh - 100px);
-            z-index: 4;
-
-            @include mobile {
-                height:calc(50vh - 50px);
-                object-fit: cover;
-            }
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        padding-left: 20%;
+        padding-right: 20%;
+        z-index: 4;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap:5%;
+        @include mobile{
+            padding-top: 0%;
+            padding-bottom: 100px;
+            padding-left: 5%;
+            padding-right: 5%;
+            flex-direction: column;
+            gap:0;
         }
 
-    }
-    .wrapper{
-        max-width: 1366px;
-        width: 68vw;
-        height: 100%;
-        margin: auto;
-        z-index: 2;
 
+        .imageContainer{
+            height: 70%;
+            width: 50%;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+    
+            z-index: 2;
+            @include mobile {
+                height: 50%;
+                width: 100%;
+
+    
+              }
+    
+            img{
+                height:100%;
+                z-index: 3;
+    
+                @include mobile {
+                    height:100%;
+                    object-fit: cover;
+                }
+            }
+    
+        }
 
         .textContainer{
             height: 100%;
@@ -54,8 +73,6 @@
             @include mobile {
                 height: 50%;
                 width: 100%;
-                right:0;
-                top:0;
                 gap: 1vh;
                 align-items: center;
                 text-align: center;
@@ -77,13 +94,14 @@
             }
             .buttons{
                 a{
-                    padding: 1.5vw;
+                    padding: 1vw;
                     border: 1px solid lightgray;
                     border-radius: 10px;
                     background-color: transparent;
                     color: lightgray;
                     margin-right: 1.5vw;
-                    font-weight: 300;
+                    font-weight: 600;
+                    font-size: 2.5vh;
                     @include mobile {
 
                     }
@@ -104,17 +122,23 @@
 
 
     .nextPage{
-        position: relative;
+        position: absolute;
         width: 100vw;
         bottom: 5vh;
         z-index: 5;
+
+        @include mobile {
+            bottom: 5vh;
+        } 
 
         img{
             height:5vh;
             margin: auto;
             display: block;
-
             z-index: 6;
+            @include mobile {
+                height:5vh;
+            } 
         }
     }
     
