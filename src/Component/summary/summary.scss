@@ -64,11 +64,10 @@
         .textContainer{
             height: 100%;
             width: 50%;
-            right:50vw;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
             gap: 6vh;
+            justify-content: center;
 
             @include mobile {
                 height: 40%;
@@ -76,6 +75,8 @@
                 gap: 1vh;
                 align-items: center;
                 text-align: center;
+                justify-content: space-between;
+                
               }
 
             h2{

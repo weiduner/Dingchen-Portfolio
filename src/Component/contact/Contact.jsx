@@ -74,6 +74,7 @@ const Contact = () => {
                     <svg>
                         <motion.path 
                             initial={{ pathLength: 0 }}
+                            fill="none"
                             animate={isInView && { pathLength: 1 }}
                             transition={{ duration: 3 }}
                             d=
