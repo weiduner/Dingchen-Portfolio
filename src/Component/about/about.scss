@@ -6,21 +6,26 @@
     overflow: hidden;
     background: #111132;
     position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
 
 
     .aboutContent{
-        height: 100%;
+        height: 90%;
         position: relative;
         background: #2e2e70;
-        border-radius: 2vh;
-        margin: 5%;
+        border-radius: 50px;
+        margin-left: 5%;
+        margin-right: 5%;
         z-index: 1;
         display: flex;
         flex-direction: row;
-        align-items: start;
+        align-items: center;
 
         .imageContainer{
-            height: 90%;
+            height: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -34,7 +39,7 @@
 
 
         .aboutItems{
-            height:90%;
+            height:100%;
             width:100%;
             position: relative;
             display: flex;

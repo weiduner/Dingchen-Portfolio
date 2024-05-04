@@ -71,10 +71,8 @@ const Contact = () => {
                     whileInView={{ opacity: 0 }}
                     transition={{ delay: 2, duration: 1 }}
                 >
-                    <svg width="450px" height="450px" viewBox="0 0 32.666 32.666">
-                        <motion.path
-                            strokeWidth={0.2}
-                            fill="none"
+                    <svg>
+                        <motion.path 
                             initial={{ pathLength: 0 }}
                             animate={isInView && { pathLength: 1 }}
                             transition={{ duration: 3 }}
