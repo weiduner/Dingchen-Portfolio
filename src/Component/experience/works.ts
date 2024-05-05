@@ -27,6 +27,9 @@ export interface work {
         {title:"React", imageSrc:"email.png"},
         {title:"React", imageSrc:"email.png"},
         {title:"React", imageSrc:"email.png"},
+        {title:"React", imageSrc:"email.png"},
+        {title:"React", imageSrc:"email.png"},
+        {title:"React", imageSrc:"email.png"},
         {title:"React", imageSrc:"email.png"}
       ],
       descriptions: [

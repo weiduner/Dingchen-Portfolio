@@ -92,13 +92,13 @@
             background: linear-gradient(180deg, #2e2e70, #111132);
             height: 90%;
             width:100%;
-            overflow: hidden;
+
             .page{
                 height: 100%;
                 color: lightgray;
-                padding-top: 2.5%;
-                padding-bottom: 2.5%;
                 padding: 5%;
+                padding-top: 1.5%;
+                padding-bottom: 2.5%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -108,14 +108,21 @@
 
                 @include mobile{
                     flex-direction: column;
+                    gap: 0;
                 }
 
                 .title{
+                    height: 15%;
                     width: 100%;
                     display: flex;
                     flex-direction: column;
                     align-items: start;
-                    justify-content: space-evenly;
+                    justify-content: start;
+                    @include mobile{
+                        height: fit-content;
+                        justify-content: start;
+
+                    }
 
 
 
@@ -160,24 +167,32 @@
                 }
 
                 .detail{
-
+                    height: 80%;
                     display: flex;
                     flex-direction: row;
                     align-items: start;
+                    overflow: hidden;
+                    overflow-y: scroll;
                     @include mobile{
                         flex-direction: column;
                         align-items: center;
+                        overflow: hidden;
+                        overflow-y: scroll;
                     }
 
 
                     .skillContainer{
+                        height: 100%;
                         width: 35%;
                         display: flex;
                         flex-wrap: wrap;
-                        gap: 3vw;
-                        justify-content: space-evenly;
+                        gap: 2vw;
+                        align-content: flex-start;
+                        justify-content: center;
                         @include mobile{
                             width: 90%;
+                            height: fit-content;
+
                         }
 
                         .skill{
@@ -190,14 +205,14 @@
                                 border-radius: 100%;
                                 display: flex;
                                 justify-content: center;
-                                width: 6vw;
-                                height: 6vw;
+                                width: 4vw;
+                                height: 4vw;
                                 @include mobile{
                                     height: max(50px, 10vw);
                                     width: max(50px, 10vw);
                                 }
                                 img{
-                                    width: 6vw;
+                                    width: 4vw;
                                     @include mobile{
                                         width: max(50px, 10vw);
                                 
@@ -222,10 +237,12 @@
                         display: flex;
                         flex-direction: column;
                         align-items: start;
-
+                        
                         @include mobile{
                             width: 90%;
-                            height: 50%;
+                            height: fit-content;
+                            overflow: visible;
+
                         }
 
                         
@@ -235,6 +252,9 @@
                             list-style-position: inside;
                             list-style-type: disc;
                             margin-left: 5%;
+                            display: flex;
+                            flex-direction: column;
+
                             @include mobile{
                                 margin-left: 0;
                                 margin-top: 5%;
