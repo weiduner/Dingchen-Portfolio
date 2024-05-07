@@ -1,3 +1,5 @@
+@import "../../../app.scss";
+
 .projectCard{
     background:linear-gradient(215deg, #2e2e70, #111132);;
     width: calc(45vw - 1rem);
@@ -7,24 +9,48 @@
     margin: 0.5rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
     justify-content: flex-start;
     align-items: start;
     color:lightgray;
     scroll-snap-align: start;
+    @include mobile {
+        width: calc(90vw - 1rem);
+    }
 
 
     .title{
         width:100%;
-        height: 8rem;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
 
+        @include mobile {
+        }
         p{
             font-size: 3rem;
             font-weight: 500;
+            @include mobile {
+                font-size: 2rem;
+            }
+        }
+
+        
+        
+
+    }
+
+    .content{
+        width:100%;
+        height: calc(100% - 3rem);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        gap:1rem;
+        @include mobile {
+            height: calc(100% - 2rem);
+            gap:1rem;
         }
 
         .skills{
@@ -34,30 +60,17 @@
             flex-wrap: wrap;
             gap:0.5rem;
 
-
-
             .skill{
                 margin-block: 0.125rem;
                 font-size: 1rem;
                 padding-inline: 2rem;
                 background: #505064;
                 border-radius: 1.5rem;
+                @include mobile {
+                    padding-inline: 1rem;
+                }
             }
         }
-        
-
-    }
-
-    .content{
-        width:100%;
-        height: calc(100% - 13rem);
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
-        gap: 4rem;
-
-        
             
         .description{
             
@@ -65,9 +78,10 @@
             font-weight: 400;
             position: relative;
             overflow-y: scroll;
-            
-
-
+            @include mobile {
+                font-size: 1rem;
+            }
+        
         }
         .buttons{
             width:100%;
@@ -78,7 +92,9 @@
             flex-direction: row;
             justify-content: space-evenly;
             align-items: center;
-
+            @include mobile {
+                font-size: 0.75rem;
+            }
             
             a{
                 height: 3rem;
@@ -89,6 +105,10 @@
                 display: flex;
                 flex-direction: row;
                 align-items: center;
+                @include mobile {
+                    height: 1.5rem;
+                    padding-inline: 1rem;
+                }
             }
             
         }
