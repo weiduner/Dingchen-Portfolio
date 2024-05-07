@@ -78,6 +78,8 @@
             font-weight: 400;
             position: relative;
             overflow-y: scroll;
+            list-style-position: inside;
+            list-style-type: disc;
             @include mobile {
                 font-size: 1rem;
             }

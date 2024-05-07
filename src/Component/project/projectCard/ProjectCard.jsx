@@ -14,7 +14,11 @@ const ProjectCard = ( {details} ) => {
                         <div className="skill" key={skill}>{skill}</div>
                     ))}
                 </div>
-                <div className="description">{details.description}</div>
+                <ul className="description">
+                    {details.description.map((item) => (
+                        <li>{item}</li>
+                    ))}
+                </ul>
                 <div className="buttons">
                     <a href={details.demoSrc} target="_blank">View Demo</a>
                     <a href={details.codeSrc} target="_blank">Source Code</a>
