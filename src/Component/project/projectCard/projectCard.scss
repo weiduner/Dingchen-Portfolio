@@ -1,0 +1,102 @@
+.projectCard{
+    background:linear-gradient(215deg, #2e2e70, #111132);;
+    width: calc(45vw - 1rem);
+    border-radius: 3rem;
+    border: 2px;
+    padding: 2rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: flex-start;
+    align-items: start;
+    color:lightgray;
+    scroll-snap-align: start;
+
+
+    .title{
+        width:100%;
+        height: 8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        p{
+            font-size: 3rem;
+            font-weight: 500;
+        }
+
+        .skills{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            gap:0.5rem;
+
+
+
+            .skill{
+                margin-block: 0.125rem;
+                font-size: 1rem;
+                padding-inline: 2rem;
+                background: #505064;
+                border-radius: 1.5rem;
+            }
+        }
+        
+
+    }
+
+    .content{
+        width:100%;
+        height: calc(100% - 13rem);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 4rem;
+
+        
+            
+        .description{
+            
+            font-size: 1.5rem;
+            font-weight: 400;
+            position: relative;
+            overflow-y: scroll;
+            
+
+
+        }
+        .buttons{
+            width:100%;
+            font-size: 1.5rem;
+            font-weight: 400;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+
+            
+            a{
+                height: 3rem;
+                padding-inline: 2rem;
+                padding-block: 2px;
+                background: #505064;
+                border-radius: 1.5rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+            
+        }
+    }
+
+    
+    
+
+
+
+}

@@ -8,6 +8,8 @@
     display: flex;
     align-items:center;
     gap: 8vw;
+    position: relative;
+    top:100px;
 
     @include mobile {
         flex: 1;

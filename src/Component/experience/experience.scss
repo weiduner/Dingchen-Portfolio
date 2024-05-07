@@ -4,6 +4,8 @@
 .experience{
     height:calc(100vh - 100px);
     width: 100%;
+    position: relative;
+    top:100px;
     align-items: center;
     display: flex;
     flex-direction: column;

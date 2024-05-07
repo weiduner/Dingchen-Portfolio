@@ -3,6 +3,9 @@
 .navbar{
     height: 100px;
     z-index: 999;
+    position: fixed;
+    width: 100%;
+    background: #0c0c1d;
 
     .wrapper{
         width: 60vw;

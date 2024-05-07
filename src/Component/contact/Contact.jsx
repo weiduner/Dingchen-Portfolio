@@ -61,7 +61,7 @@ const Contact = () => {
                 </motion.div>
                 <motion.div className="item" variants={variants}>
                     <motion.h2>Address</motion.h2>
-                    <motion.span>6090 Iona Dr, Vancouver, BC, CA</motion.span>
+                    <motion.span>Vancouver, Birtish Columbia, Canada</motion.span>
                 </motion.div>
             </motion.div>
             <div className="formContainer" >

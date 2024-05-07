@@ -17,108 +17,42 @@ export interface work {
   export const allWorks = [
     { 
       icon: "email.png", 
-      name: "ashjewerthgejythrgr", 
+      name: "D3 Security Management Systems Inc.", 
       title: "Software Engineer in Testing",
-      start: "Apr 2019",
-      end: "Apr 2020",
+      start: "Apr 2023",
+      end: "Jan 2024",
       skills: [
-        {title:"React", imageSrc:"email.png"},
-        {title:"React", imageSrc:"email.png"},
-        {title:"React", imageSrc:"email.png"},
-        {title:"React", imageSrc:"email.png"},
-        {title:"React", imageSrc:"email.png"},
-        {title:"React", imageSrc:"email.png"},
-        {title:"React", imageSrc:"email.png"},
-        {title:"React", imageSrc:"email.png"},
-        {title:"React", imageSrc:"email.png"}
+        {title:"GitHub", imageSrc:"github.png"},
       ],
       descriptions: [
-        "Designed and executed comprehensive test cases, ensuring robust coverage of both functional and non-functional requirements, thereby elevating product quality.",
-        "Developed automation solutions that optimized testing processes, resulting in a significant 25% increase in efficiency and a reduction in manual workload.",
-        "Developed mock servers and APIs to simulate third-party interactions for testing and development purposes.",
-        "Implemented authentication mechanisms, including OAuth and JWT, to secure API endpoints and manage user access.",
+        "Developed an automation performance testing script to assess the application’s performance from 10 to 500 data requests per second, ensuring its stability and scalability under different usage scenarios.",
+        "Designed and executed test scenarios to replicate diverse user activities, stress testing the application and identifying performance bottlenecks for optimization.",
+        "Collaborated closely with the development team to analyze performance bottlenecks and implement optimizations in the application’s codebase, enhancing overall performance and user experience.",
+        "Created a custom mock server to facilitate integration testing of Rest API interactions between the application and third-party systems, ensuring seamless integration and reliable API interactions.",
+        "Implemented comprehensive test scenarios covering functional tests, performance tests, error handling, and rate limit validation to guarantee the reliability and stability of API interactions, enhancing the application’s robustness.",
+        "Employed dynamic responses to simulate real-world scenarios and edge cases, augmenting the thoroughness of integration testing and ensuring the application’s readiness for diverse environments.",
+        "Implemented authentication mechanisms such as OAuth and JWT to secure API endpoints and manage user access, bolstering the application’s security posture.",
         "Collaborated with QA team members to integrate automated tests into the continuous integration (CI) pipeline, enabling faster feedback loops and smoother deployment processes.",
-        "Utilized Python to architect and implement automation scripts, enhancing the efficiency of the QA process and introducing tools for generating randomized test data to support regression testing.",
-        "Enabled the QA team to perform performance testing on the application using Python automation scripts, leading to improvements in application performance and stability.",
-        " Implemented proactive performance testing strategies, resulting in a notable 15% reduction in production bugs and the early identification of potential issues, thereby improving overall product reliability.",
-        "Provided comprehensive training and support to team members, fostering a culture of continuous learning and skill development in automation tool utilization."
       ]
     },
     { 
       icon: "email.png", 
-      name: "D3 Security Management dfgsfdgsre sertgsretg", 
+      name: "D3 Security Management Systems Inc2.", 
       title: "Software Engineer in Testing",
-      start: "Apr 2019",
-      end: "Apr 2020",
+      start: "Apr 2023",
+      end: "Jan 2024",
       skills: [
-        {title:"React", imageSrc:"email.png"},
-        {title:"React", imageSrc:"email.png"},
-        {title:"React", imageSrc:"email.png"},
-        {title:"React", imageSrc:"email.png"},
-        {title:"React", imageSrc:"email.png"},
-        {title:"React", imageSrc:"email.png"}
+        {title:"GitHub", imageSrc:"github.png"},
       ],
       descriptions: [
-        "Designed and executed comprehensive test cases, ensuring robust coverage of both functional and non-functional requirements, thereby elevating product quality.",
-        "Developed automation solutions that optimized testing processes, resulting in a significant 25% increase in efficiency and a reduction in manual workload.",
-        "Developed mock servers and APIs to simulate third-party interactions for testing and development purposes.",
-        "Implemented authentication mechanisms, including OAuth and JWT, to secure API endpoints and manage user access.",
+        "Developed an automation performance testing script to assess the application’s performance from 10 to 500 data requests per second, ensuring its stability and scalability under different usage scenarios.",
+        "Designed and executed test scenarios to replicate diverse user activities, stress testing the application and identifying performance bottlenecks for optimization.",
+        "Collaborated closely with the development team to analyze performance bottlenecks and implement optimizations in the application’s codebase, enhancing overall performance and user experience.",
+        "Created a custom mock server to facilitate integration testing of Rest API interactions between the application and third-party systems, ensuring seamless integration and reliable API interactions.",
+        "Implemented comprehensive test scenarios covering functional tests, performance tests, error handling, and rate limit validation to guarantee the reliability and stability of API interactions, enhancing the application’s robustness.",
+        "Employed dynamic responses to simulate real-world scenarios and edge cases, augmenting the thoroughness of integration testing and ensuring the application’s readiness for diverse environments.",
+        "Implemented authentication mechanisms such as OAuth and JWT to secure API endpoints and manage user access, bolstering the application’s security posture.",
         "Collaborated with QA team members to integrate automated tests into the continuous integration (CI) pipeline, enabling faster feedback loops and smoother deployment processes.",
-        "Utilized Python to architect and implement automation scripts, enhancing the efficiency of the QA process and introducing tools for generating randomized test data to support regression testing.",
-        "Enabled the QA team to perform performance testing on the application using Python automation scripts, leading to improvements in application performance and stability.",
-        " Implemented proactive performance testing strategies, resulting in a notable 15% reduction in production bugs and the early identification of potential issues, thereby improving overall product reliability.",
-        "Provided comprehensive training and support to team members, fostering a culture of continuous learning and skill development in automation tool utilization."
-      ]
-    },
-    { 
-      icon: "email.png", 
-      name: "jyhrdthgsergrwa dfgsfdgsre sertgsretg", 
-      title: "Software Engineer in Testing",
-      start: "Apr 2019",
-      end: "Apr 2020",
-      skills: [
-        {title:"React", imageSrc:"email.png"},
-        {title:"React", imageSrc:"email.png"},
-        {title:"React", imageSrc:"email.png"},
-        {title:"React", imageSrc:"email.png"},
-        {title:"React", imageSrc:"email.png"},
-        {title:"React", imageSrc:"email.png"}
-      ],
-      descriptions: [
-        "Designed and executed comprehensive test cases, ensuring robust coverage of both functional and non-functional requirements, thereby elevating product quality.",
-        "Developed automation solutions that optimized testing processes, resulting in a significant 25% increase in efficiency and a reduction in manual workload.",
-        "Developed mock servers and APIs to simulate third-party interactions for testing and development purposes.",
-        "Implemented authentication mechanisms, including OAuth and JWT, to secure API endpoints and manage user access.",
-        "Collaborated with QA team members to integrate automated tests into the continuous integration (CI) pipeline, enabling faster feedback loops and smoother deployment processes.",
-        "Utilized Python to architect and implement automation scripts, enhancing the efficiency of the QA process and introducing tools for generating randomized test data to support regression testing.",
-        "Enabled the QA team to perform performance testing on the application using Python automation scripts, leading to improvements in application performance and stability.",
-        " Implemented proactive performance testing strategies, resulting in a notable 15% reduction in production bugs and the early identification of potential issues, thereby improving overall product reliability.",
-        "Provided comprehensive training and support to team members, fostering a culture of continuous learning and skill development in automation tool utilization."
-      ]
-    },{ 
-      icon: "email.png", 
-      name: "D3drghfrsetjhrtydhrthrtgsretg", 
-      title: "Software Engineer in Testing",
-      start: "Apr 2019",
-      end: "Apr 2020",
-      skills: [
-        {title:"React", imageSrc:"email.png"},
-        {title:"React", imageSrc:"email.png"},
-        {title:"React", imageSrc:"email.png"},
-        {title:"React", imageSrc:"email.png"},
-        {title:"React", imageSrc:"email.png"},
-        {title:"React", imageSrc:"email.png"}
-      ],
-      descriptions: [
-        "Designed and executed comprehensive test cases, ensuring robust coverage of both functional and non-functional requirements, thereby elevating product quality.",
-        "Developed automation solutions that optimized testing processes, resulting in a significant 25% increase in efficiency and a reduction in manual workload.",
-        "Developed mock servers and APIs to simulate third-party interactions for testing and development purposes.",
-        "Implemented authentication mechanisms, including OAuth and JWT, to secure API endpoints and manage user access.",
-        "Collaborated with QA team members to integrate automated tests into the continuous integration (CI) pipeline, enabling faster feedback loops and smoother deployment processes.",
-        "Utilized Python to architect and implement automation scripts, enhancing the efficiency of the QA process and introducing tools for generating randomized test data to support regression testing.",
-        "Enabled the QA team to perform performance testing on the application using Python automation scripts, leading to improvements in application performance and stability.",
-        " Implemented proactive performance testing strategies, resulting in a notable 15% reduction in production bugs and the early identification of potential issues, thereby improving overall product reliability.",
-        "Provided comprehensive training and support to team members, fostering a culture of continuous learning and skill development in automation tool utilization."
       ]
     },
   ];

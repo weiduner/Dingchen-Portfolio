@@ -5,6 +5,7 @@ import "./app.scss"
 import Contact from "./Component/contact/Contact";
 import About from "./Component/about/About";
 import Experience from "./Component/experience/Experience";
+import Project from "./Component/project/Project";
 const App = () => {
   return <div>
 
@@ -16,7 +17,7 @@ const App = () => {
 
     {/* About Page */}  
     <section id="About">
-      <Navbar/> 
+
       <About/>
     </section>
 
@@ -26,7 +27,7 @@ const App = () => {
     </section>
 
     <section>
-      <Navbar/> 
+
       <Experience/>
     </section>
 
@@ -35,9 +36,14 @@ const App = () => {
       <Parallax type="project"/>
     </section>
 
+    <section>
+
+      <Project/>
+    </section>
+
     {/* Contact Page */} 
     <section id="Contact">
-      <Navbar/>
+
       <Contact/>
     </section>
   </div>;
