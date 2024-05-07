@@ -1,90 +1,85 @@
 @import "../../app.scss";
 
-.about{
-    height: calc(100vh - 100px);
-    width:100%;
-    overflow: hidden;
-    background: #111132;
+.about {
+  height: calc(100vh - 100px);
+  width: 100%;
+  overflow: hidden;
+  background: #111132;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  top: 100px;
+
+  .aboutContent {
+    height: 90%;
     position: relative;
+    background: #2e2e70;
+    border-radius: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    z-index: 1;
     display: flex;
     flex-direction: row;
     align-items: center;
-    top:100px;
 
-    .aboutContent{
-        height: 90%;
-        position: relative;
-        background: #2e2e70;
-        border-radius: 50px;
-        margin-left: 5%;
-        margin-right: 5%;
-        z-index: 1;
+    .imageContainer {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .aboutImg {
+        height: 100%;
+      }
+      @include mobile {
+        display: none;
+      }
+    }
+
+    .aboutItems {
+      height: 100%;
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2vh;
+
+      .aboutItem {
+        flex: 1;
+        width: 100%;
+        color: lightgray;
         display: flex;
         flex-direction: row;
         align-items: center;
-
-        .imageContainer{
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            .aboutImg{
-                height:100%;
-            }
-            @include mobile{
-                display: none;
-            }
+        border-radius: 20px;
+        list-style: none;
+        padding: 25px;
+        background-image: linear-gradient(90deg, #ffffff42 0%, #2e2e70 100%);
+        gap: 5vh;
+        background-size: 0 100%;
+        background-repeat: no-repeat;
+        img {
+          width: 10%;
         }
-
-
-        .aboutItems{
-            height:100%;
-            width:100%;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 2vh;
-
-            .aboutItem{ 
-                flex: 1;
-                width:100%;
-                color: lightgray;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                border-radius: 20px;
-                list-style: none;
-                padding: 25px;
-                background-image: linear-gradient(90deg, #ffffff42 0%, #2e2e70 100%);
-                gap: 5vh;
-                background-size: 0 100%;
-                background-repeat: no-repeat;
-                img{
-                    width: 10%;
-                }
-                .textContainer{
-                    color: lightgray;
-                    h3{
-                        font-size: 2.2vw;
-                        font-weight: 800;
-                        color: white;
-                        @include mobile{
-                            font-size: 2.2vh;
-                        }
-                    }
-                    p{
-                        font-size: 2vw;
-                        @include mobile{
-                            font-size: 2vh;
-                        }
-                    }
-
-
+        .textContainer {
+          color: lightgray;
+          h3 {
+            font-size: 2.2vw;
+            font-weight: 800;
+            color: white;
+            @include mobile {
+              font-size: 2.2vh;
             }
+          }
+          p {
+            font-size: 2vw;
+            @include mobile {
+              font-size: 2vh;
+            }
+          }
         }
+      }
     }
-
-}
-
+  }
 }

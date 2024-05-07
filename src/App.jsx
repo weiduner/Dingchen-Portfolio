@@ -1,4 +1,4 @@
-import Navbar from "./Component/Navbar/Navbar";
+import Navbar from "./Component/navbar/Navbar";
 import Summary from "./Component/summary/Summary";
 import Parallax from "./Component/parallax/Parallax";
 import "./app.scss"

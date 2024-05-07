@@ -1,291 +1,252 @@
 @import "../../app.scss";
 
+.experience {
+  height: calc(100vh - 100px);
+  width: 100%;
+  position: relative;
+  top: 100px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 
-.experience{
-    height:calc(100vh - 100px);
+  .windowContainer {
+    height: 100%;
     width: 100%;
+    padding: 10%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
     position: relative;
-    top:100px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
 
+    nav {
+      width: 100%;
+      height: 40px;
+      background: lightgray;
+      padding: 5px 5px 0;
+      border-radius: 10px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: end;
 
-    .windowContainer{
-        height:100%;
+      ul {
+        display: flex;
         width: 100%;
-        padding: 10%;
-        padding-top: 2.5%;
-        padding-bottom: 2.5%;
-        position: relative;
+        height: 100%;
+        align-items: end;
+        li {
+          height: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          flex-wrap: nowrap;
+          overflow: hidden;
+          border-radius: 10px;
+          position: relative;
+          background: rgb(211, 211, 211);
+          cursor: pointer;
+          justify-content: space-between;
+          flex: 1;
+          min-width: 40px;
+          user-select: none;
+          color: gray;
+          padding-left: 1%;
 
-        nav {
+          .divider {
+            height: 20px;
+            width: 2px;
+            background-color: rgb(189, 189, 189);
+            border-radius: 1px;
+          }
+
+          .icon {
+            height: 30px;
+            min-width: 30px;
+            display: flex;
+            justify-content: center;
+          }
+
+          .title {
+            left: 0;
+            width: calc(99% - 32px);
+            padding-left: max(0.5vw, 4%);
+            color: gray;
+            font-size: 20px;
+            white-space: nowrap;
+          }
+        }
+        li.selected {
+          background: #eee;
+          border-bottom-right-radius: 0;
+          border-bottom-left-radius: 0;
+          flex-grow: 2;
+        }
+      }
+    }
+
+    main {
+      background: linear-gradient(180deg, #2e2e70, #111132);
+      height: 90%;
+      width: 100%;
+
+      .page {
+        height: 100%;
+        color: lightgray;
+        padding: 5%;
+        padding-top: 1.5%;
+        padding-bottom: 2.5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        user-select: none;
+        gap: 2.5%;
+
+        @include mobile {
+          flex-direction: column;
+          gap: 0;
+        }
+
+        .title {
+          height: 15%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          justify-content: start;
+          @include mobile {
+            height: fit-content;
+            justify-content: start;
+          }
+
+          .jobTitle {
+            font-size: 2vw;
+            font-weight: 700;
+            @include mobile {
+              font-size: max(15px, 6vw);
+            }
+          }
+
+          .info {
             width: 100%;
-            height: 40px;
-            background: lightgray;
-            padding: 5px 5px 0;
-            border-radius: 10px;
-            border-bottom-left-radius: 0;
-            border-bottom-right-radius: 0;
             display: flex;
             flex-direction: row;
-            align-items: end;
-
-            ul{
-                display:flex;
-                width: 100%;
-                height: 100%;
-                align-items: end;
-                li {
-                    height:100%;
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    flex-wrap:nowrap;
-                    overflow: hidden;
-                    border-radius: 10px; 
-                    position: relative; 
-                    background: rgb(211, 211, 211);  
-                    cursor: pointer;
-                    justify-content: space-between;
-                    flex: 1; 
-                    min-width: 40px; 
-                    user-select: none; 
-                    color: gray; 
-                    padding-left: 1%;
-
-
-                    .divider{
-                        height: 20px;
-                        width: 2px;
-                        background-color: rgb(189, 189, 189);
-                        border-radius: 1px;
-                    }
-
-                    .icon{
-                        height: 30px;
-                        min-width: 30px;
-                        display: flex;
-                        justify-content: center;
-
-                    }
-
-                    .title{
-                        left: 0;
-                        width: calc(99% - 32px);
-                        padding-left: max(0.5vw, 4%);
-                        color: gray; 
-                        font-size: 20px;
-                        white-space: nowrap;
-
-                    }
-
-                }
-                li.selected {
-                    background: #eee;
-                    border-bottom-right-radius: 0;
-                    border-bottom-left-radius: 0;
-                    flex-grow: 2;
-                  }
+            justify-content: space-between;
+            align-items: center;
+            @include mobile {
+              flex-direction: row;
+              align-items: start;
             }
+            .companyName {
+              font-size: 20px;
+              font-weight: 400;
+              @include mobile {
+                font-size: max(7.5px, 3vw);
+              }
+            }
+
+            .duration {
+              font-size: 20px;
+              font-weight: 400;
+              white-space: nowrap;
+              @include mobile {
+                font-size: max(7.5px, 3vw);
+              }
+            }
+          }
         }
 
-        main {
-            background: linear-gradient(180deg, #2e2e70, #111132);
-            height: 90%;
-            width:100%;
+        .detail {
+          height: 80%;
+          display: flex;
+          flex-direction: row;
+          align-items: start;
+          overflow: hidden;
+          overflow-y: scroll;
+          @include mobile {
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+            overflow-y: scroll;
+          }
 
-            .page{
-                height: 100%;
-                color: lightgray;
-                padding: 5%;
-                padding-top: 1.5%;
-                padding-bottom: 2.5%;
+          .skillContainer {
+            height: 100%;
+            width: 35%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2vw;
+            align-content: flex-start;
+            justify-content: center;
+            @include mobile {
+              width: 90%;
+              height: fit-content;
+            }
+
+            .skill {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 2%;
+              .imageContainer {
+                background-color: red;
+                border-radius: 100%;
                 display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-evenly;
-                user-select: none;
-                gap: 2.5%;
-
-                @include mobile{
-                    flex-direction: column;
-                    gap: 0;
+                justify-content: center;
+                width: 4vw;
+                height: 4vw;
+                @include mobile {
+                  height: max(50px, 10vw);
+                  width: max(50px, 10vw);
                 }
-
-                .title{
-                    height: 15%;
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: start;
-                    justify-content: start;
-                    @include mobile{
-                        height: fit-content;
-                        justify-content: start;
-
-                    }
-
-
-
-                    .jobTitle{
-                        font-size: 2vw;
-                        font-weight: 700;
-                        @include mobile{
-                            font-size: max(15px, 6vw);
-                        }
-                    }
-
-                    .info{
-                        width: 100%;
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
-                        align-items: center;
-                        @include mobile{
-                            flex-direction: row;
-                            align-items: start;
-
-                        }
-                        .companyName{
-                            font-size: 20px;
-                            font-weight: 400;
-                            @include mobile{
-                                font-size: max(7.5px, 3vw);
-                            }
-                        }
-                        
-
-                        
-                        .duration{
-                            font-size: 20px;
-                            font-weight: 400;
-                            white-space: nowrap;
-                            @include mobile{
-                                font-size: max(7.5px, 3vw);
-                            }
-                        }
-                    }
+                img {
+                  width: 4vw;
+                  @include mobile {
+                    width: max(50px, 10vw);
+                  }
                 }
+              }
 
-                .detail{
-                    height: 80%;
-                    display: flex;
-                    flex-direction: row;
-                    align-items: start;
-                    overflow: hidden;
-                    overflow-y: scroll;
-                    @include mobile{
-                        flex-direction: column;
-                        align-items: center;
-                        overflow: hidden;
-                        overflow-y: scroll;
-                    }
-
-
-                    .skillContainer{
-                        height: 100%;
-                        width: 35%;
-                        display: flex;
-                        flex-wrap: wrap;
-                        gap: 2vw;
-                        align-content: flex-start;
-                        justify-content: center;
-                        @include mobile{
-                            width: 90%;
-                            height: fit-content;
-
-                        }
-
-                        .skill{
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            gap: 2%;
-                            .imageContainer{
-                                background-color:red;
-                                border-radius: 100%;
-                                display: flex;
-                                justify-content: center;
-                                width: 4vw;
-                                height: 4vw;
-                                @include mobile{
-                                    height: max(50px, 10vw);
-                                    width: max(50px, 10vw);
-                                }
-                                img{
-                                    width: 4vw;
-                                    @include mobile{
-                                        width: max(50px, 10vw);
-                                
-                                }
-                                }
-                            }
-
-                            p{
-                                font-size: 1.5vw;
-                                font-weight: 500;
-                                @include mobile{
-                                    font-size: max(10px, 4vw);
-                                    font-weight: 300;
-                                }
-                            }
-                        }
-                        
-                    }
-                    .textContainer{
-                        width: 65%;
-                        height: 100%;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: start;
-                        
-                        @include mobile{
-                            width: 90%;
-                            height: fit-content;
-                            overflow: visible;
-
-                        }
-
-                        
-                        
-                        .description{
-                            font-size: 20px;
-                            list-style-position: inside;
-                            list-style-type: disc;
-                            margin-left: 5%;
-                            display: flex;
-                            flex-direction: column;
-
-                            @include mobile{
-                                margin-left: 0;
-                                margin-top: 5%;
-                                font-size: max(7.5px, 3vw);
-                            }
-
-                        }
-
-
-
-                    }
+              p {
+                font-size: 1.5vw;
+                font-weight: 500;
+                @include mobile {
+                  font-size: max(10px, 4vw);
+                  font-weight: 300;
                 }
+              }
             }
+          }
+          .textContainer {
+            width: 65%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+
+            @include mobile {
+              width: 90%;
+              height: fit-content;
+              overflow: visible;
+            }
+
+            .description {
+              font-size: 20px;
+              list-style-position: inside;
+              list-style-type: disc;
+              margin-left: 5%;
+              display: flex;
+              flex-direction: column;
+
+              @include mobile {
+                margin-left: 0;
+                margin-top: 5%;
+                font-size: max(7.5px, 3vw);
+              }
+            }
+          }
         }
+      }
     }
-    
-      
-      
-
-      
-      
-      
-      
-
-
-
-      
-
-
-      
-
+  }
 }
