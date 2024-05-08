@@ -1,6 +1,6 @@
 import "./experience.scss"
 import { useState } from "react";
-import { allWorks as works } from "./works.ts";
+import { allWorks as works } from "../../../data.ts";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Experience = () =>{

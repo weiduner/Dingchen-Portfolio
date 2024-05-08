@@ -2,7 +2,7 @@ import "./project.scss"
 import { motion,useInView } from "framer-motion"
 import {useRef,useState} from "react";
 import ProjectCard from "./projectCard/ProjectCard";
-import { allProjects } from "./projects.js";
+import { allProjects } from "../../../data.ts";
 
 const Project = () => {
     const projectContainerRef = useRef(null);
