@@ -1,5 +1,12 @@
 @import "../../app.scss";
-
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(128, 128, 128, 0.4);
+  border-radius: 5px;
+}
 .projectContainer {
   height: calc(100% - 70px);
   width: 100%;

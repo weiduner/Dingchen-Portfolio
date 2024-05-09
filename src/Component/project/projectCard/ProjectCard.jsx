@@ -16,7 +16,7 @@ const ProjectCard = ( {details} ) => {
                 </div>
                 <ul className="description">
                     {details.description.map((item) => (
-                        <li>{item}</li>
+                        <li  key={item}>{item}</li>
                     ))}
                 </ul>
                 <div className="buttons">

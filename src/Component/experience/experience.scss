@@ -64,6 +64,9 @@
             min-width: 30px;
             display: flex;
             justify-content: center;
+            img {
+              height: 30px;
+            }
           }
 
           .title {
@@ -155,6 +158,13 @@
             }
           }
         }
+        ::-webkit-scrollbar {
+          width: 5px;
+        }
+        ::-webkit-scrollbar-thumb {
+          background: rgba(128, 128, 128, 0.4);
+          border-radius: 5px;
+        }
 
         .detail {
           height: 80%;
@@ -163,6 +173,7 @@
           align-items: start;
           overflow: hidden;
           overflow-y: scroll;
+
           @include mobile {
             flex-direction: column;
             align-items: center;
@@ -189,20 +200,23 @@
               align-items: center;
               gap: 2%;
               .imageContainer {
-                background-color: red;
-                border-radius: 100%;
+                background-color: #fff;
+                border-radius: 25%;
                 display: flex;
                 justify-content: center;
-                width: 4vw;
-                height: 4vw;
+                align-items: center;
+                width: 5vw;
+                height: 5vw;
                 @include mobile {
                   height: max(50px, 10vw);
                   width: max(50px, 10vw);
                 }
                 img {
                   width: 4vw;
+                  height: 4vw;
                   @include mobile {
-                    width: max(50px, 10vw);
+                    width: max(40px, 8vw);
+                    height: max(40px, 8vw);
                   }
                 }
               }
