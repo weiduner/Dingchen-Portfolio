@@ -142,7 +142,6 @@ export const allProjects = [
   },
   {
     title: "Quasar Dipole",
-    imageSrc: "email.png",
     demoSrc: "https://github.com/weiduner",
     codeSrc: "https://github.com/weiduner",
     skills: ["Python", "Pandas", "Healpy", "SQL"],
@@ -168,11 +167,10 @@ export const allProjects = [
     ],
   },
   {
-    title: "protfolio3",
-    imageSrc: "email.png",
-    demoSrc: "https:/github.com/weiduner",
-    codeSrc: "https:/github.com/weiduner",
-    skills: ["react1", "react2", "react3"],
-    description: [],
+    title: "Issue Tracker (In Porgress)",
+    demoSrc: "",
+    codeSrc: "",
+    skills: [],
+    description: [""],
   },
 ];
