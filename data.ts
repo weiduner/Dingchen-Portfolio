@@ -109,6 +109,49 @@ export const allWorks = [
 
 export const allProjects = [
   {
+    title: " Issue Tracker Web App",
+    demoSrc: "https://issue-tracker-ruddy-nine.vercel.app",
+    codeSrc: "https://github.com/weiduner/Issue-Tracker",
+    skills: [
+      "TypeScript",
+      "JavaScript",
+      "Next.js",
+      "Tailwind CSS",
+      "Radix-UI",
+      "NextAuth.js",
+      "MongoDB",
+      "MySQL",
+      "Prisma ORM",
+    ],
+    description: [
+      "Designed and implemented the web application using \
+      TypeScript and JavaScript with Next.js, creating reusable\
+      components to enhance maintainability and scalability.",
+      "Utilized Tailwind CSS and Radix-UI for advanced styling \
+      techniques, ensuring a consistent design across the\
+      application while adhering to responsive design principles \
+      for a seamless user experience.",
+      "Built secure user authentication and authorization \
+      using NextAuth.js, allowing users to sign in and manage \
+      their issues effectively.",
+      "Developed robust API endpoints with Next.js for creating, \
+      updating, deleting, and assigning issues, streamlining \
+      issue management.",
+      "Implemented a dynamic dashboard to summarize issues \
+      with key metrics and visualizations, providing users with \
+      an overview of project statuses.",
+      "Connected and interacted with MongoDB and MySQL databases \
+      using Prisma ORM, ensuring efficient data\
+      management and scalability.",
+      "Optimized application performance using Next.js features \
+      like server-side rendering and static site generation,\
+      improving load times and user satisfaction.",
+      "Leveraged Git for version control, maintaining a \
+      structured development workflow and facilitating seamless \
+      code integration and deployment.",
+    ],
+  },
+  {
     title: "Web Protfolio",
     demoSrc: "https://dingchen-portfolio.netlify.app",
     codeSrc: "https://github.com/weiduner/Dingchen-Portfolio",
@@ -165,12 +208,5 @@ export const allProjects = [
       database, contributing to comprehensive data analysis \
       and interpretation.",
     ],
-  },
-  {
-    title: "Issue Tracker (In Porgress)",
-    demoSrc: "",
-    codeSrc: "",
-    skills: [],
-    description: [""],
   },
 ];
